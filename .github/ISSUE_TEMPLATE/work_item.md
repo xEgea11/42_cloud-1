@@ -1,3 +1,11 @@
+---
+name: Work Item
+about: Create a work item
+title: ""
+labels: ""
+assignees: ""
+---
+
 ## Objective
 
 <!-- What must be achieved? -->
