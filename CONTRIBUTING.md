@@ -131,17 +131,55 @@ Each Pull Request should focus on a single objective whenever possible.
 
 ---
 
-# When is a PR ready for review?
+# PR revision, validation, approval and merge
 
-It must check all the following:
+A PR should contain the information and evidence as it is asked in the PR template
 
-* The implementation is complete.
-* The branch is synchronized with develop.
-* Tests/validation has been performed.
+## Revision
+
+Before opening a PR to be reviewed, the author should verify:
+
+* The implementation addresses the linked Issue.
+* The branch is up to date with develop.
+* The code has been self-reviewed.
+* Relevant tests or validation have been performed.
+* No secrets or unnecessary files have been committed.
+* Documentation has been updated when necessary.
 * The PR description is complete.
-* The related issue is linked.
-* The author has reviewed their own changes.
 * The Definition of Done is satisfied.
+
+In this project, both team members can review each other's work.
+The CODEOWNERS is defined for better structure, although in this case is redundant. 
+
+## Approval
+
+The reviewer must verify the following before approving:
+
+* Branches are correct -- the PR is done between the expected branches
+* Correctness -- the implementation solves the issue
+* Requirements -- it satisfies the PR template requirements
+* Comments -- review comments have been addressed properly
+
+The reviewer should request changes when:
+
+* Requirements are not satisfied
+* Incorrect implementation
+* Missing validation
+* Important architectural problem
+* Missing required documentation
+* Security issue detected
+
+## Merge
+
+A PR can be merged only when:
+
+* There is a linked issue
+* The author has self-reviewed
+* The validation process is complete
+* Reviewer has approved
+* The conversations are approved
+* Branch protection is satisfied
+
 ---
 
 # What about a Draft PR?
